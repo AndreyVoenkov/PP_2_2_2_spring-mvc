@@ -12,23 +12,19 @@
 <table class="table table-bordered">
     <thead>
     <tr>
-        <th scope="col">Model</th>
         <th scope="col">ID</th>
+        <th scope="col">Model</th>
+        <th scope="col">series</th>
     </tr>
     </thead>
     <tbody>
     <tr th:each="car : ${cars}">
-        <td th:text="${car.model}"/>
-        <td th:text="${car.id}"/>
+        <td th:text="${car.getId()}"/>
+        <td th:text="${car.getModel()}"/>
+        <td th:text="${car.getSeries()}"/>
     </tr>
     </tbody>
 </table>
-
-
-<!--<div th:each="car : ${cars}">-->
-<!--    <a th:href="@{'/cars/'+${car.getId()}}"-->
-<!--       th:text="${car.getModel()}">car</a>-->
-<!--</div>-->
 
 </body>
 </html>

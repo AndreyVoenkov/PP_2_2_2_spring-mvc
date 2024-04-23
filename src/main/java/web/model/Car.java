@@ -2,7 +2,7 @@ package web.model;
 
 public class Car {
 
-    public int id;
+    private int id;
 
     private String model;
 
